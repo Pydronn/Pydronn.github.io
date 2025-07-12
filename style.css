@@ -1,8 +1,11 @@
 html {
-  /* px means "pixels". The base font size is now 10 pixels high */
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
   font-size: 20px;
-  /* Replace PLACEHOLDER with the font-family property value you got from Google Fonts */
-  font-family: "Roboto";
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 p {
