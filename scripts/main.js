@@ -1,17 +1,10 @@
-// Store a reference to the <h1> in a variable
-const myHeading = document.querySelector("h1");
-const listItems = document.querySelectorAll("li");
-// Update the text content of the <h1>
-myHeading.textContent = "Hello world!";
+const myImage = document.querySelector("img");
 
-function toggleDone(e) {
-  if (!e.target.className) {
-    e.target.className = "done";
+myImage.addEventListener("click", () => {
+  const mySrc = myImage.getAttribute("src");
+  if (mySrc === "images/Sequoia_Lab.png") {
+    myImage.setAttribute("src", "images/Sequoia_Lab.png");
   } else {
-    e.target.className = "";
+    myImage.setAttribute("src", "images/WostiT.png");
   }
-}
-
-listItems.forEach((item) => {
-  item.addEventListener("click", toggleDone);
 });
