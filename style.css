@@ -42,3 +42,8 @@ img {
   line-height : 5px;
   letter-spacing : 2px;  
 }
+
+.done{
+  color : darkseagreen;
+  text-decoration: line-through solid black 2px;
+}
